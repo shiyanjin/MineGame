@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: #f5f5dc;
+}
+.wapper{
+    width:900px;
+    height:670px;
+    border:1px solid #3caf9b;
+    margin:0 auto;
+    position: relative;
+}.wapper #title{
+    color: rgba(69, 57, 55, 0.49);
+    font-family: 方正舒体;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #77edc5;
+    text-align: center;
+ }
+ .wapper .gameBox,.control{
+     width: 610px;
+     height:600px;
+     border:2px solid #77edc5;
+     margin: 20px 10px 10px;
+     float:left;
+ }
+.wapper .gameBox{
+    background-color: #9edcdd;
+}
+ .wapper .control{
+     width:200px;
+     border:none
+ }
+ /*显示雷个数和时间的数字*/
+ .wapper .control .num{
+     color:red;
+     font-size: 30px;
+ }
+ .wapper .control span{
+     font-size: 20px;
+ }
+.wapper .control p{
+    margin-top: 20px;
+}
+/*难度等级start*/
+.wapper .control .level{
+    width:160px;
+    height:110px;
+    border: 1px solid black;
+    margin:40px auto;
+}
+.wapper .control .level h3{
+    position: absolute;
+    top:202px;
+    left:690px;
+    background-color: #f5f5dc;
+}
+/*难度等级end*/
+.wapper .control .level input{
+    margin:20px 0 0 30px;
+}
+/*小方格*/
+.tile{
+    background-color: #9edcdd;
+    border:1px solid black;
+    float:left;
+}
+/*点击到雷后的失败提醒*/
+#over{
+    position:absolute;
+    top:300px;
+    left:180px;
+    font-size:100px;
+    font-family: 华文彩云;
+    color:#458971;
+    text-shadow:10px;
+}
+/*雷的数量*/
+#mineCount{
+    text-align: center;
+    font-size: 30px;
+}
+/*开始游戏按钮*/
+.start{
+    width:100px;
+    height:60px;
+    background-color: #71e2ba;
+    border-width: 15px 10px 15px 10px;
+    border-color: #43af98;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:white;
+}
+/*****提示*****/
+ul{
+    margin-left:30px;
+}
+ul li{
+    margin-top:10px;
+}
