@@ -21,12 +21,12 @@ function mouseclick(liftMines,clickTile,level){
                 aevent.preventDefault();          //对标准DOM 中断 默认点击右键事件处理函数
             }
         };
-        $("#tile"+clickTile).append("<img src='images/flag.jpg'/>");
+        $("#tile"+clickTile).append("<img src='../images/flag.jpg'/>");
         $("img").css({"width":width+"px","height":width+"px"});//设置图片大小
         //tileState[clickTile] = 0;//更新状态信息
     } else if (aevent.button == 0) {
         //var width = 600 / level - 2;//插入雷或标志雷的图片宽高
-        $("#tile" + clickTile).append("<img src='images/mine2.jpg'/>");//插入地雷背景图
+        $("#tile" + clickTile).append("<img src='../images/mine2.jpg'/>");//插入地雷背景图
         $("img").css({"width": width + "px", "height": width + "px"});//设置图片大小
         $("#gamebox").append("<p id='over'><b>失 败!</b></p>");//插入结束提示
         if (confirm("再玩一次？")) {
